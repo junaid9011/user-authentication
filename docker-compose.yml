@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  app:
+    container_name: user-authentication
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=dev
+      - DB_LOCAL_URL=mongodb://mongo:27017/user-authentication
+      - JWT_SECRET=FJKLJSDKLFJSKDGHASFKLSDFJKLFKJSD
+      - JWT_EXPIRES_TIME=7d
+      - COOKIE_EXPIRES_TIME=7
+    depends_on:
+      - mongo
+    volumes:
+      - .:/app
+
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
+    driver: local
