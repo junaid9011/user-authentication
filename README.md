@@ -139,7 +139,6 @@ Authorization: Bearer <accessToken>
 }
 ```
 
-
 ## 📝 License
 
 MIT
