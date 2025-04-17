@@ -125,7 +125,7 @@ Authorization: Bearer <accessToken>
 
 ---
 
-## Payment Api Endpoints
+## Payment API Endpoints
 
 ### Checkout Payment - `POST /payments/checkout`
 
