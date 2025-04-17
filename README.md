@@ -4,13 +4,14 @@ A robust user authentication system built with Node.js, Express, MongoDB, and Pa
 
 ## Features
 
-- ✅ User Registration
-- 🔐 Secure Password Hashing with Bcrypt
-- 🔑 JSON Web Token (JWT) Authentication
-- 👤 Protected User Profile Route
-- 🧪 Unit Testing with Jest & Supertest
-- 🔍 Input Validation
-- 🛠️ Docker & Docker Compose Ready
+- User Registration
+- Secure Password Hashing with Bcrypt
+- JSON Web Token (JWT) Authentication with Passport.JS
+- Protected User Profile Route
+- Unit Testing with Jest & Supertest
+- Input Validation
+- Docker & Docker Compose Ready
+- Stripe Payment Integration
 
 
 ## Set up the project
@@ -43,7 +44,7 @@ npm install
 
 ---
 
-## 🧪 Run Tests
+## Run Tests
 
 ```bash
 npm test
@@ -91,8 +92,8 @@ docker-compose down
 
 ```json
 {
-  "name": "John Doe",
-  "email": "john@example.com",
+  "name": "tester",
+  "email": "test@example.com",
   "phone": "12345678901",
   "password": "password123"
 }
@@ -100,20 +101,20 @@ docker-compose down
 
 ---
 
-### 🔓 Login - `POST /auth/login`
+### Login - `POST /auth/login`
 
 **Request Body:**
 
 ```json
 {
-  "email": "john@example.com",
+  "email": "test@example.com",
   "password": "password123"
 }
 ```
 
 ---
 
-### 🙍‍♂️ Profile - `GET /auth/me`
+###  Profile - `GET /auth/me`
 
 **Headers:**
 
@@ -122,6 +123,20 @@ Authorization: Bearer <accessToken>
 ```
 
 ---
+
+## Payment Api Endpoints
+
+### Checkout Payment - `POST /payments/checkout`
+
+**Request Body:**
+
+```json
+{
+  "ammount": 50,
+  "user": 'userId'
+}
+```
+
 
 ## 📝 License
 
