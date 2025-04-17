@@ -133,8 +133,8 @@ Authorization: Bearer <accessToken>
 
 ```json
 {
-  "ammount": 50,
-  "user": 'userId'
+  "amount": 50,
+  "user": '6784564f545g8764645'
 }
 ```
 
