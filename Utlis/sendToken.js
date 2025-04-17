@@ -24,6 +24,7 @@ const sendToken = (user, statusCode, res) => {
         .json({
             success: true,
             accessToken,
+            refreshToken,
             user,
         });
 };
