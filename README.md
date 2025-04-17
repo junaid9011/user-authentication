@@ -25,8 +25,9 @@ cd user-authentication
 Create a `.env` file in the root directory and add the following:
 
 ```bash
+NODE_ENV=dev
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/user_db
+DB_LOCAL_URL=mongodb://localhost:27017/user_db
 JWT_SECRET=your_jwt_secret
 JWT_EXPIRE_TIME=15m
 JWT_REFRESH_SECRET=your_refresh_token_secret
