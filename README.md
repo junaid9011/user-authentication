@@ -10,7 +10,7 @@ A robust user authentication system built with Node.js, Express, MongoDB, and Pa
 - Protected User Profile Route
 - Unit Testing with Jest & Supertest
 - Input Validation
-- Docker & Docker Compose Ready
+- Docker & Docker Compose 
 - Stripe Payment Integration
 
 
