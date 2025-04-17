@@ -26,4 +26,4 @@ yarn.lock
 
 commit.sh
 
-/config.env
+.env

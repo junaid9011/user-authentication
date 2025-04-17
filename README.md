@@ -28,6 +28,7 @@ Create a `.env` file in the root directory and add the following:
 NODE_ENV=dev
 PORT=5000
 DB_LOCAL_URL=mongodb://localhost:27017/user_db
+DB_URL=live_db_url
 JWT_SECRET=your_jwt_secret
 JWT_EXPIRE_TIME=15m
 JWT_REFRESH_SECRET=your_refresh_token_secret
