@@ -7,6 +7,7 @@ A robust user authentication system built with Node.js, Express, MongoDB, and Pa
 - User Registration
 - Secure Password Hashing with Bcrypt
 - JSON Web Token (JWT) Authentication with Passport.JS
+- Rate Limiter for preventing brute-force attacks 
 - Protected User Profile Route
 - Unit Testing with Jest & Supertest
 - Input Validation
