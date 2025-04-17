@@ -134,7 +134,7 @@ Authorization: Bearer <accessToken>
 ```json
 {
   "amount": 50,
-  "user": '6784564f545g8764645'
+  "user": "6784564f545g8764645"
 }
 ```
 
